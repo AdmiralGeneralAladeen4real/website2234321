@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://cdn.pixabay.com/animation/2022/08/14/03/55/03-55-37-522_512.gif');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+ 
+<div class="header">
+  <h1>Wonders of the world</h1>
+  <p>Theese are the wonders of the world.</p>
+</div>
+
+<div class="topnav">
+  <a href="greatpyramidofgeeza.html">GEEZA</a>
+  <a href="2meterpeter.html">2 meter peter</a>
+  <a href="beans.html">beans</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>England key facts
+
+    </h2>
+    <p>England is the largest country in the United Kingdom.
+      London is the capital city of England and is one of the most populous cities in the world.
+      The official language of England is English, which is spoken by the vast majority of the population..</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>Welcome to our website celebrating the wonders of modern Britain! From the bustling cities to the tranquil countryside, this beautiful country is full of treasures waiting to be discovered.
+
+      Explore the rich history and culture of this diverse nation, from iconic landmarks like Big Ben and Stonehenge to the world-renowned art galleries and museums. Discover the unique regional cuisines and traditional pubs serving up delicious food and drinks.
+      
+      If you're looking for adventure, the UK is the perfect destination for outdoor enthusiasts, with breathtaking hikes, scenic cycling routes, and exciting water sports. And if relaxation is what you seek, you'll find plenty of spas and wellness centers offering rejuvenating treatments.
+      
+      With its vibrant music scene, thriving fashion industry, and innovative technology sector, modern Britain is a hub of creativity and innovation. Join us on this journey to discover all the wonders that this remarkable country has to offer.</p>
+   
+  </div>
+  
+  <div class="column side">
+    <h2>other things to know</h2>
+    <p>england is better than france
+      france is awfull
+      france is mid 
+      who even likes france
+    </p>
+  </div>
+</div>
+</body>
+<audio autoplay>
+  <source src="FUNNY.wav" type="audio/wav" />
+</audio>
+</html>
+
+
